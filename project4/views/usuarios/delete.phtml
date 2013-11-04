@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+	<form method="post" name="userRegister">
+		<div>			
+			<input type="hidden" name="id" value="<?= $_GET["line"]; ?>" />
+		</div>
+		<div>
+			<label>Nombre:</label>
+			<input type="text" name="name" readonly value="<?= (isset($user[1]))?$user[1]:''; ?>" />
+		</div>
+		<div>
+			<label>¿Seguro desea borrar el usuario?</label>
+		</div>		
+		<div>			
+			<input type="submit" value="SI" name="answer" />
+			<input type="submit" value="NO" name="answer" />
+		</div>
+		
+	
+	
+	</form>
+</body>
+</html>

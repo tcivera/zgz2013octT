@@ -1,0 +1,7 @@
+1234746,Tamara,giuweg@sdhosi.es,12345,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,12345,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,12345,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,12345,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,12345,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg
+1234746,Tamara,giuweg@sdhosi.es,,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Gato,ingles|frances|aleman,madrid,miFoto.jpg

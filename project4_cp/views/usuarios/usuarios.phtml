@@ -1,0 +1,42 @@
+<html>
+<head>
+
+</head>
+<body>
+<a href='/usuarios.php?action=insert'>Insertar usuario</a>
+<table border="1">
+<tr>
+<th>id</th>
+<th>Nombre</th>
+<th>Email</th>
+<th>Password</th>
+<th>Dirección</th>
+<th>Teléfono</th>
+<th>Descripción</th>
+<th>Tecnologías</th>
+<th>Mascota</th>
+<th>Idiomas</th>
+<th>Ciudad</th>
+<th>Foto</th>
+<th>Opciones</th>
+</tr>
+<?php foreach($users as $i => $user):?>			
+	<tr>
+		<?php foreach($user as $key => $dato):?>
+				<?php if ($key < (count($user) - 1)): ?>
+					<td><?= $dato ?></td>
+				<?php else: 
+					$rutaImagen = "../uploads/" . $dato;
+				?>			
+					<td><img src='<?= $rutaImagen ?>' height='40px' /></td>
+				<?php endif; ?>
+	 	<?php endforeach; ?>
+		<td>
+			<a href='/usuarios.php?action=update&id=<?= $i?>'>Update</a>
+			<a href='/usuarios.php?action=delete&id=<?= $i?>'>Delete</a>
+		</td>
+	</tr>			
+<?php endforeach; ?>
+</table>
+</body>
+</html>

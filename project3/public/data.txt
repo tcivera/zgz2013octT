@@ -1,0 +1,1 @@
+1234746,Tamara,emem@hsd.es,13232,45555555,Hola q tal,miFoto.jpg,[MYSQL],Perro,[aleman],zaragoza

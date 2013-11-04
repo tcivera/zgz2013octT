@@ -1,0 +1,6 @@
+1234746,Tama,giuweg@sdhosi.es,,C/Feghsd n2,657456363,Je eje,PHP|MYSQL,Perro,ingles|frances|aleman,madrid,miFoto - copia_3.jpg
+1234746,Pepe,212@dsdsd.es,,C/gdia,765453626,Si si si,PHP|JAVA,Otros,frances|aleman,valencia,miFoto.jpg
+
+,dfdsf,dfdsf,dfsdf,dfsdsf,fsdf,23232,PHP|MYSQL,Gato,frances,zaragoza,miFoto.jpg
+,dfdsf,dfdf,dfdf,fdf,dfd,dfdf,MYSQL,Gato,ingles|frances,zaragoza,miFoto - copia_0.jpg
+,,,,,,,zaragoza,_0.

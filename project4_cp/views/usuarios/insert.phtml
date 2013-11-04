@@ -1,0 +1,78 @@
+<html>
+<head>
+
+</head>
+<body>
+	<form method="post" name="userRegister" ENCTYPE="multipart/form-data">
+		<div>			
+			<input type="hidden" name="id" value="<?= (isset($user[0]))?$user[0]:''; ?>" />
+		</div>
+		<div>
+			<label>Nombre:</label>
+			<input type="text" name="name" value="<?= (isset($user[1]))?$user[1]:''; ?>" />
+		</div>
+		<div>
+			<label>Email:</label>
+			<input type="text" name="email" value="<?=(isset($user[2]))?$user[2]:''; ?>" />
+		</div>
+		<div>
+			<label>Password:</label>
+			<input type="password" name="password" />
+		</div>
+		<div>
+			<label>Dirección:</label>
+			<input type="text" name="address" value="<?=(isset($user[4]))?$user[4]:''; ?>" />
+		</div>
+		<div>
+			<label>Teléfono:</label>
+			<input type="text" name="phone" value="<?= (isset($user[5]))?$user[5]:''; ?>" />
+		</div>
+		<div>
+			<label>Descripción:</label>
+			<textarea name="description"><?=(isset($user[6]))?$user[6]:''; ?></textarea>
+		</div>
+		<div>
+			<label>Fotografía:</label>
+			<input type="file" name="photo" />
+			<input type="text" name="photoAnterior" value="<?= (isset($user[11]))?$user[11]:''; ?>" readonly />
+		</div>
+		<div>
+			<label>Tecnología:</label>
+			<label>PHP</label><input type="checkbox" name="technology[]" value="PHP"  <?= (isset($user[7]))?in_array("PHP",$user[7])?"checked":"":""; ?>/>
+			<label>MySQL</label><input type="checkbox" name="technology[]" value="MYSQL"  <?= (isset($user[7]))?in_array("MYSQL",$user[7])?"checked":"":""; ?>/>
+			<label>Java</label><input type="checkbox" name="technology[]" value="JAVA"  <?= (isset($user[7]))?in_array("JAVA",$user[7])?"checked":"":""; ?>/>
+		</div>
+		<div>
+			<label>Mascotas:</label>
+			<label>Perro</label><input type="radio" name="pet" value="Perro" <?= (isset($user[8]))?strpos("Perro",$user[8]) !== false?"checked":"":""; ?> />
+			<label>Gato</label><input type="radio" name="pet" value="Gato" <?= (isset($user[8]))?strpos("Gato",$user[8]) !== false?"checked":"":""; ?> />
+			<label>Otros</label><input type="radio" name="pet" value="Otros" <?= (isset($user[8]))?strpos("Otros",$user[8]) !== false?"checked":"":""; ?> />
+		</div>
+		<div>
+			<label>Idiomas:</label>
+			<select name="language[]"  multiple>
+				<option value="ingles" <?= (isset($user[9]))?in_array("ingles",$user[9])?"selected":"":""; ?> >Inglés</option>
+				<option value="frances" <?= (isset($user[9]))?in_array("frances",$user[9])?"selected":"":""; ?>>Francés</option>
+				<option value="aleman" <?= (isset($user[9]))?in_array("aleman",$user[9])?"selected":"":""; ?> >Alemán</option>
+				<option value="italiano" <?= (isset($user[9]))?in_array("italiano",$user[9])?"selected":"":""; ?> >Italiano</option>
+			</select>
+		</div>
+		<div>
+			<label>Ciudad:</label>
+			<select name="city">
+				<option value="zaragoza" <?= (isset($user[10]))?strpos("zaragoza",$user[10]) !== false?"selected":"":""; ?> >Zaragoza</option>
+				<option value="barcelona" <?= (isset($user[10]))?strpos("barcelona",$user[10]) !== false?"selected":"":""; ?> >Barcelona</option>
+				<option value="madrid" <?= (isset($user[10]))?strpos("madrid",$user[10]) !== false?"selected":"":""; ?>>Madrid</option>
+				<option value="valencia" <?= (isset($user[10]))?strpos("valencia",$user[10]) !== false?"selected":"":""; ?>>Valencia</option>
+			</select>
+		</div>
+		<div>		
+			<input type="reset" value="Limpiar" />	
+			<input type="submit" value="Registrarse" />
+		</div>
+		
+	
+	
+	</form>
+</body>
+</html>

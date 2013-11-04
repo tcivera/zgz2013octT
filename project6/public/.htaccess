@@ -1,0 +1,12 @@
+# Le indico el entorno en el que me encuentro
+SetEnv APPLICATION_ENV production
+
+# Pongo el modulo necesario
+RewriteEngine On
+# Si encuentra un fichero o directorio con ese nombre lo sirve
+RewriteCond %{REQUEST_FILENAME} -r [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+# Si no lo encuentra va a index.php
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
